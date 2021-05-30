@@ -12,7 +12,7 @@
                         backgroundImage: `url(${LeftBanner})`
                     }}>
                         <a>
-                            Select Category
+                            Take Survey
                         </a>
                 </div>
                 <div className="item"
@@ -20,10 +20,11 @@
                         backgroundImage: `url(${RightBanner})`
                     }}>
                         <a>
-                            Select Category
+                            FAQs
                         </a>
                 </div>
             </div>
+            
          </div>
      )
  }

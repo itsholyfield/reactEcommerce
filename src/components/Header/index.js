@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.scss';
-import Logo from './../../assets/logo.png'
+import Logo from './../../assets/logo.svg'
 import { Link } from 'react-router-dom'
 import {auth} from './../../firebase/utils'
 
