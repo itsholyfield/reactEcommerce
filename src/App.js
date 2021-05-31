@@ -9,10 +9,14 @@ import Homepage from './pages/Homepage'
 import Registration from './pages/Registration';
 import Login from './pages/Login';
 import Recovery from './pages/Recovery';
+import Consultation from './pages/Consultation';
+import AreasCodeForm from './pages/Consultation';
+import MapLayout from './pages/Consultation';
 
 import MainLayout from './layouts/MainLayout';
 import HomepageLayout from './layouts/HomepageLayout';
 import './default.scss';
+import ConsultationLayout from './layouts/ConsultationLayout';
 
 class App extends Component {
   authListener = null; 
@@ -72,6 +76,15 @@ class App extends Component {
             <Route path="/recovery" render={() => (
               <MainLayout>
                 <Recovery />
+              </MainLayout>
+            )} />
+
+            <Route path="/consultation" render={() => (
+              <MainLayout>
+                <ConsultationLayout>
+                  <AreasCodeForm/>
+                  <MapLayout/>
+                </ConsultationLayout>
               </MainLayout>
             )} />
           </Switch>
