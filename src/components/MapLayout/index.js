@@ -4,10 +4,8 @@ import './styles.scss';
 class MapLayout extends Component {
     render() {
         return (
-            <div className="formWrap">
-                <div className="map">
-
-                </div>
+            <div className="map">
+                
             </div>
         
         )

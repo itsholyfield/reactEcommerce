@@ -59,10 +59,6 @@ class AreasCodeForm extends Component {
     render() {
         const {areaCode, errors} = this.state;
 
-        const configAuthWrapper = {
-            headline: 'AreaCode'
-        }
-
         return (
             <div className="formWrap">
                 {errors.length > 0 && (
