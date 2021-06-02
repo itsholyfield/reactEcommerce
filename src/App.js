@@ -4,14 +4,11 @@ import { connect } from 'react-redux';
 import { auth, handleUserProfile } from './firebase/utils';
 import { setCurrentUser } from './redux/User/user.action';
 
-
 import Homepage from './pages/Homepage'
 import Registration from './pages/Registration';
 import Login from './pages/Login';
 import Recovery from './pages/Recovery';
 import Consultation from './pages/Consultation';
-import AreasCodeForm from './pages/Consultation';
-import MapLayout from './pages/Consultation';
 
 import MainLayout from './layouts/MainLayout';
 import HomepageLayout from './layouts/HomepageLayout';
@@ -81,10 +78,9 @@ class App extends Component {
 
             <Route path="/consultation" render={() => (
               <MainLayout>
-                <ConsultationLayout>
-                  <AreasCodeForm/>
-                  <MapLayout/>
-                </ConsultationLayout>
+                
+                <Consultation/>
+                
               </MainLayout>
             )} />
           </Switch>

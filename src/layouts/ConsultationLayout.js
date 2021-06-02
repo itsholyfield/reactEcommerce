@@ -1,14 +1,13 @@
 import React from 'react';
-import AreasCodeForm from '../components/AreasCodeForm';
 import MapLayout from '../components/MapLayout';
 
 const ConsultationLayout = props => {
     return ( 
         <div>
-            <AreasCodeForm {...props} />
+            {/* <AreasCodeForm {...props} />
             <div className="areaCodeForm">
                 {props.children}
-            </div>
+            </div> */}
             <MapLayout {...props} />
             <div className="mapLayout">
                 {props.children}

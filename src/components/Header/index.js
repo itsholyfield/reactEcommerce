@@ -25,13 +25,13 @@ const Header = props => {
                     {!currentUser && (
                         <ul>
                             <li>
-                                <Link to="/registration">
-                                    Register                            
+                                <Link to="/">
+                                    Home                            
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/login">
-                                    Login                            
+                                <Link to="/consultation">
+                                    Take Consultation                            
                                 </Link>
                             </li>
                         </ul>
@@ -58,13 +58,13 @@ const Header = props => {
                     {!currentUser && (
                         <ul>
                             <li>
-                                <Link to="/registration">
-                                    Register                            
+                                <Link to="/">
+                                    FAQs                            
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/login">
-                                    Login                            
+                                <Link to="/">
+                                    About Us                            
                                 </Link>
                             </li>
                         </ul>
