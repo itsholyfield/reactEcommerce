@@ -11,13 +11,19 @@
     position: relative;
     height: 500px;
     .item {
+        position: absolute;
         width: 50%;
         margin: 3rem auto 0;
-        float: left;
     }
 }
 
-.formWrap {
-    max-width: 40.0rem;
+.formWraps {
+    max-width: 15.0rem;
     margin: 3rem auto 0;
+    text-align: center;
+    left: 1%;
+}
+
+.mapWraps {
+    left: 49%;
 }

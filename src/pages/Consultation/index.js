@@ -1,11 +1,11 @@
 import React from 'react';
-import MapLayout from '../../components/MapLayout';
+import Map from '../../components/MapLayout/map';
 import './styles.scss'
 
 const Consultation = props => {
     return (
         <section className="consultation">
-            <MapLayout />  
+            <Map />  
         </section>
     )
 }
