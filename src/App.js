@@ -13,7 +13,8 @@ import Consultation from './pages/Consultation';
 import MainLayout from './layouts/MainLayout';
 import HomepageLayout from './layouts/HomepageLayout';
 import './default.scss';
-import ConsultationLayout from './layouts/ConsultationLayout';
+import './assets/css/style.scss';
+
 
 class App extends Component {
   authListener = null; 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withGoogleMap, GoogleMap, withScriptjs, InfoWindow, Marker, MarkerWithLabel } from "react-google-maps";
+import { withGoogleMap, GoogleMap, withScriptjs, Marker } from "react-google-maps";
 import Geocode from "react-geocode";
 import Autocomplete from 'react-google-autocomplete';
 import { GoogleMapsAPI } from './client-config';
@@ -179,22 +179,20 @@ class MapLayout extends Component {
 					           defaultCenter={{ lat: this.state.mapPosition.lat, lng: this.state.mapPosition.lng }}
 							   options={{streetViewControl: false, fullscreenControl: false, zoomControl : false, defaultUI: false}}
 					>
-						
+						{/* InfoWindow on top of marker */}
+						{/* <InfoWindow
+								onClose={this.onInfoWindowClose}
+								position={{ lat: ( this.state.markerPosition.lat + 0.0018 ), lng: this.state.markerPosition.lng }}
+							>
+								<span style={{ padding: 0, margin: 0 }}>Hello Tobi, you have selected { this.state.city } as your City. </span>
+						</InfoWindow> */}
 						{/*Marker*/}
 						<Marker google={this.props.google}
 						        name={'Dolores park'}
 						        draggable={false}
 						        onDragEnd={ this.onMarkerDragEnd }
 						        position={{ lat: this.state.markerPosition.lat, lng: this.state.markerPosition.lng }}
-						>
-							{/* InfoWindow on top of marker */}
-							<InfoWindow
-								onClose={this.onInfoWindowClose}
-								position={{ lat: ( this.state.markerPosition.lat + 0.0018 ), lng: this.state.markerPosition.lng }}
-								>
-								<span style={{ padding: 0, margin: 0 }}>Hello Tobi, you have selected { this.state.city } as your City. </span>
-							</InfoWindow>
-						</Marker>
+						/>
 					</GoogleMap>
 				)
 			)
@@ -203,6 +201,7 @@ class MapLayout extends Component {
 		if( this.props.center.lat !== undefined ) {
 			map = <div className="container">
 				<div className="item formWraps">
+					<h5>What is your postcode?</h5>
                 	{/* For Auto complete Search Box */}
                     <Autocomplete
                         placeholder={'Enter Area Code'}

@@ -1,32 +1,22 @@
  import React from 'react';
- import LeftBanner from '../../assets/leftBanner.png';
- import RightBanner from '../../assets/rightBanner.png';
- import './styles.scss'
 
  const Directory = props => {
      return (
-         <div className="directory">
-            <div className="wrap">
-                <div className="item"
-                    style={{
-                        backgroundImage: `url(${LeftBanner})`
-                    }}>
-                        <a>
-                            Take Survey
-                        </a>
-                </div>
-                <div className="item"
-                    style={{
-                        backgroundImage: `url(${RightBanner})`
-                    }}>
-                        <a>
-                            FAQs
-                        </a>
+        //Page Header Start
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Welcome to Electric Earth :D</h2>
+                    </div>
+
+                    <div class="col-12">
+                        <h5>Our goal is to help you feel confident about going electric!</h5>
+                    </div>
                 </div>
             </div>
-            
-         </div>
-     )
- }
+        </div>
+        //Page Header End
+     )}
 
  export default Directory;

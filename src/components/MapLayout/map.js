@@ -12,7 +12,6 @@ class Home extends Component {
 					height='400px'
 					zoom={15}
 				/>
-
                 
 			</div>
             
